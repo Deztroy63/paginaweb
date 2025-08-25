@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Orientada a Objetos en Java</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">POO en Java</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#estructuras-control">Estructuras de Control</a></li>
+                <li class="nav-item"><a class="nav-link" href="#clases-objetos">Clases, Objetos y Métodos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <section id="estructuras-control">
+            <h2>Estructuras de Control</h2>
+            <p>En Java, las estructuras de control permiten dirigir el flujo de ejecución del programa. A continuación, se presentan los bucles más comunes:</p>
+            
+            <h3>Bucle For</h3>
+            <pre><code class="language-java">
+for (int i = 0; i &lt; 10; i++) {
+    System.out.println(i);
+}
+            </code></pre>
+            <p>El bucle <code>for</code> se utiliza para iterar un bloque de código un número específico de veces.</p>
+
+            <h3>Bucle While</h3>
+            <pre><code class="language-java">
+int i = 0;
+while (i &lt; 10) {
+    System.out.println(i);
+    i++;
+}
+            </code></pre>
+            <p>El bucle <code>while</code> ejecuta un bloque de código mientras una condición sea verdadera.</p>
+
+            <h3>Bucle Do-While</h3>
+            <pre><code class="language-java">
+int i = 0;
+do {
+    System.out.println(i);
+    i++;
+} while (i &lt; 10);
+            </code></pre>
+            <p>El bucle <code>do-while</code> garantiza que el bloque de código se ejecute al menos una vez.</p>
+        </section>
+
+        <section id="clases-objetos">
+            <h2>Clases, Objetos y Métodos</h2>
+            <p>La Programación Orientada a Objetos se basa en la creación de clases y objetos. A continuación, se presentan ejemplos básicos:</p>
+
+            <h3>Definición de una Clase</h3>
+            <pre><code class="language-java">
+public class Persona {
+    String nombre;
+    int edad;
+
+    public void saludar() {
+        System.out.println("Hola, mi nombre es " + nombre);
+    }
+}
+            </code></pre>
+            <p>Una clase <code>Persona</code> con atributos <code>nombre</code> y <code>edad</code>, y un método <code>saludar</code>.</p>
+
+            <h3>Creación de un Objeto</h3>
+            <pre><code class="language-java">
+Persona persona = new Persona();
+persona.nombre = "Juan";
+persona.edad = 30;
+persona.saludar();
+            </code></pre>
+            <p>Se crea un objeto de la clase <code>Persona</code> y se llama al método <code>saludar</code>.</p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
